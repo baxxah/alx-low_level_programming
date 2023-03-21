@@ -1,24 +1,30 @@
-#include "holberton.h"
+#include"main.h"
 
 /**
- * _isalpha - Entry point
- * @c: the integer value it receives
- * Description: checks if alphabet
- * Return: 1 if true. 0 if false
- */
+ * print_sign - print + if n is greater than zero,
+ *             0 if n is zero and - if n is less
+ *             than zero.
+ *
+ * @n: takes integer type input for function.
+ *
+ * Return: 1 if +, 0 if 0 and -1 if -
+*/
 
-int _isalpha(int c)
+int print_sign(int n)
 {
-	if (c >= 'a' && c <= 'z')
+	if (n > 0)
 	{
-	return (1);
-	}
-	else if (c >= 'A' && c <= 'Z')
-	{
+		_putchar(43 + 0);
 		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar(0 + 48);
+		return (0);
 	}
 	else
 	{
-		return (0);
+		_putchar(45 + 0);
+		return (-1);
 	}
 }
