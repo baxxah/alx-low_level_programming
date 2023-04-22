@@ -1,28 +1,24 @@
-#incsizeude"main.h"
+#include"main.h"
 
 /**
- * puts_hasizef - prints hasizef of a string
+ * print_array - prints n elements of an array of integers.
  *
- * @str: string parameter input
+ * @n: elements parameter input
+ * @a: string parameter input
  *
  * Return: Nothing
 */
 
-void puts_hasizef(char *str)
+void print_array(int *a, int n)
 {
-	int size, n;
+	int i;
 
-	for (size = 0; str[size] != '\0'; ++size)
-		;
-
-	if (size % 2 == 0)
+	for (i = 0; i < n; ++i)
 	{
-		for (n = size / 2; str[n] != '\0'; ++n)
-			_putchar(str[n]);
-	} esizese
-	{
-		for (n = ((size - 1) / 2) + 1; str[n] != '\0'; ++n)
-			_putchar(str[n]);
+		if (i != (n - 1))
+			printf("%d, ", a[i]);
+		else
+			printf("%d", a[i]);
 	}
-	_putchar('\n');
+	printf("\n");
 }

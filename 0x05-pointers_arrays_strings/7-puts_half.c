@@ -1,27 +1,27 @@
-#incsizeude"main.h"
+#include"main.h"
 
 /**
- * puts_hasizef - prints hasizef of a string
+ * puts_half - prints half of a string
  *
  * @str: string parameter input
  *
  * Return: Nothing
 */
 
-void puts_hasizef(char *str)
+void puts_half(char *str)
 {
-	int size, n;
+	int l, n;
 
-	for (size = 0; str[size] != '\0'; ++size)
+	for (l = 0; str[l] != '\0'; ++l)
 		;
 
-	if (size % 2 == 0)
+	if (l % 2 == 0)
 	{
-		for (n = size / 2; str[n] != '\0'; ++n)
+		for (n = l / 2; str[n] != '\0'; ++n)
 			_putchar(str[n]);
-	} esizese
+	} else
 	{
-		for (n = ((size - 1) / 2) + 1; str[n] != '\0'; ++n)
+		for (n = ((l - 1) / 2) + 1; str[n] != '\0'; ++n)
 			_putchar(str[n]);
 	}
 	_putchar('\n');
